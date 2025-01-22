@@ -9,7 +9,7 @@ body {
     min-height: 100svh;
     min-height: -webkit-fill-aviable;
     margin: 0px;
-    font-family: sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     background-color: lightblue;
 }
 #superior{
@@ -17,11 +17,32 @@ body {
     height: 8vmax;
     justify-content:center;
     align-items:center;
-    font-size:4vmax;
+    font-size:3vmax;
     color:black;
-    background-color:#950E17;
+    background-color:#e59da2;
+}
+#central{
+    display: flex;
+    height: 8vmax;
+    justify-content:center;
+    align-items:center;
+    font-size:3vmax;
+    color:rgb(138, 218, 148);
+    background-color:#eaf0f2;
 }
 
 #menu {
     height: 8vmax;
+    display: flex; /* el menú és un contenidor de tipus flex */
+    height: 8vmax;
+}
+#menu i{
+        flex: 1; /* cada botó pretén ocupar tot l'espai disponible */
+        display: flex; /* contenidor flex on centrar-hi la icona */
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #950E17;
+        font-size: 5vmax;
+        cursor: pointer; /* en ordinadors, indica que s'hi pot fer clic */
 }
